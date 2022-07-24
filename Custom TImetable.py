@@ -1,0 +1,134 @@
+from tkinter import *
+
+tk = Tk()
+
+tk.title('Time Manager')
+tk.geometry("500x500")
+
+frame1=Frame(tk)
+frame1.pack(side=TOP,fill=X)
+
+frame2=Frame(tk)
+frame2.pack(side=TOP, fill=X)
+
+def custom_table():
+    global frame2
+    Title.destroy()
+    create_timetable.destroy()
+    Button(frame2, text="").grid(row=0, column=0, sticky ='ew')
+    Button(frame2, text="Monday").grid(row=0, column=1 , sticky ='ew')
+    Button(frame2, text="Tuesday").grid(row=0, column=2 , sticky ='ew')
+    Button(frame2, text="Wednesday").grid(row=0, column=3 , sticky ='ew')
+    Button(frame2, text="Thursday").grid(row=0, column=4 , sticky ='ew')
+    Button(frame2, text="Friday").grid(row=0, column=5 , sticky ='ew')
+    Button(frame2, text="Saturday").grid(row=0, column=6 , sticky ='ew')
+    Button(frame2, text="Sunday").grid(row=0, column=7 , sticky ='ew')
+
+    Button(frame2, text="8AM-9AM ").grid(row=1, column=0, sticky='ew')
+    Button(frame2, text="9Am-10AM").grid(row=2, column=0, sticky='ew')
+    Button(frame2, text="10AM-11AM").grid(row=3, column=0, sticky='ew')
+    Button(frame2, text="11AM-12PM").grid(row=4, column=0, sticky='ew')
+    Button(frame2, text="12PM-1PM").grid(row=5, column=0, sticky='ew')
+    Button(frame2, text="1PM-2PM").grid(row=6, column=0, sticky='ew')
+    Button(frame2, text="2PM-3PM").grid(row=7, column=0, sticky='ew')
+    Button(frame2, text="3PM-4PM").grid(row=8, column=0, sticky='ew')
+    Button(frame2, text="4PM-5PM").grid(row=9, column=0, sticky='ew')
+
+
+    Entry(frame2).grid(row=1, column=1, sticky='ew')
+    Entry(frame2).grid(row=2, column=1, sticky='ew')
+    Entry(frame2).grid(row=3, column=1, sticky='ew')
+    Entry(frame2).grid(row=4, column=1, sticky='ew')
+    Entry(frame2).grid(row=5, column=1, sticky='ew')
+    Entry(frame2).grid(row=6, column=1, sticky='ew')
+    Entry(frame2).grid(row=7, column=1, sticky='ew')
+    Entry(frame2).grid(row=8, column=1, sticky='ew')
+    Entry(frame2).grid(row=9, column=1, sticky='ew')
+
+    Entry(frame2).grid(row=1, column=2, sticky='ew')
+    Entry(frame2).grid(row=2, column=2, sticky='ew')
+    Entry(frame2).grid(row=3, column=2, sticky='ew')
+    Entry(frame2).grid(row=4, column=2, sticky='ew')
+    Entry(frame2).grid(row=5, column=2, sticky='ew')
+    Entry(frame2).grid(row=6, column=2, sticky='ew')
+    Entry(frame2).grid(row=7, column=2, sticky='ew')
+    Entry(frame2).grid(row=8, column=2, sticky='ew')
+    Entry(frame2).grid(row=9, column=2, sticky='ew')
+
+    Entry(frame2).grid(row=1, column=3, sticky='ew')
+    Entry(frame2).grid(row=2, column=3, sticky='ew')
+    Entry(frame2).grid(row=3, column=3, sticky='ew')
+    Entry(frame2).grid(row=4, column=3, sticky='ew')
+    Entry(frame2).grid(row=5, column=3, sticky='ew')
+    Entry(frame2).grid(row=6, column=3, sticky='ew')
+    Entry(frame2).grid(row=7, column=3, sticky='ew')
+    Entry(frame2).grid(row=8, column=3, sticky='ew')
+    Entry(frame2).grid(row=9, column=3, sticky='ew')
+
+    Entry(frame2).grid(row=1, column=4, sticky='ew')
+    Entry(frame2).grid(row=2, column=4, sticky='ew')
+    Entry(frame2).grid(row=3, column=4, sticky='ew')
+    Entry(frame2).grid(row=4, column=4, sticky='ew')
+    Entry(frame2).grid(row=5, column=4, sticky='ew')
+    Entry(frame2).grid(row=6, column=4, sticky='ew')
+    Entry(frame2).grid(row=7, column=4, sticky='ew')
+    Entry(frame2).grid(row=8, column=4, sticky='ew')
+    Entry(frame2).grid(row=9, column=4, sticky='ew')
+
+    Entry(frame2).grid(row=1, column=5, sticky='ew')
+    Entry(frame2).grid(row=2, column=5, sticky='ew')
+    Entry(frame2).grid(row=3, column=5, sticky='ew')
+    Entry(frame2).grid(row=4, column=5, sticky='ew')
+    Entry(frame2).grid(row=5, column=5, sticky='ew')
+    Entry(frame2).grid(row=6, column=5, sticky='ew')
+    Entry(frame2).grid(row=7, column=5, sticky='ew')
+    Entry(frame2).grid(row=8, column=5, sticky='ew')
+    Entry(frame2).grid(row=9, column=5, sticky='ew')
+
+    Entry(frame2).grid(row=1, column=6, sticky='ew')
+    Entry(frame2).grid(row=2, column=6, sticky='ew')
+    Entry(frame2).grid(row=3, column=6, sticky='ew')
+    Entry(frame2).grid(row=4, column=6, sticky='ew')
+    Entry(frame2).grid(row=5, column=6, sticky='ew')
+    Entry(frame2).grid(row=6, column=6, sticky='ew')
+    Entry(frame2).grid(row=7, column=6, sticky='ew')
+    Entry(frame2).grid(row=8, column=6, sticky='ew')
+    Entry(frame2).grid(row=9, column=6, sticky='ew')
+
+    Entry(frame2).grid(row=1, column=7, sticky='ew')
+    Entry(frame2).grid(row=2, column=7, sticky='ew')
+    Entry(frame2).grid(row=3, column=7, sticky='ew')
+    Entry(frame2).grid(row=4, column=7, sticky='ew')
+    Entry(frame2).grid(row=5, column=7, sticky='ew')
+    Entry(frame2).grid(row=6, column=7, sticky='ew')
+    Entry(frame2).grid(row=7, column=7, sticky='ew')
+    Entry(frame2).grid(row=8, column=7, sticky='ew')
+    Entry(frame2).grid(row=9, column=7, sticky='ew')
+    back = Button(frame2, text = "Back", command = previous_page)
+    back.grid()
+
+
+def previous_page():
+    Title=Frame(frame1)
+    Title.pack(side=TOP,fill=X)
+    Title = Label(frame1, text = "Welcome to Time Manager")
+    Title.pack()
+    create_timetable=Frame(frame1)
+    create_timetable.pack(side=TOP,fill=X)
+    create_timetable = Button(frame1, text = "Create Custom Timetable", command = custom_table)
+    create_timetable.pack()
+
+
+
+
+Title=Frame(frame1)
+Title.pack(side=TOP,fill=X)
+Title = Label(frame1, text = "Welcome to Time Manager")
+Title.pack()
+create_timetable=Frame(frame1)
+create_timetable.pack(side=TOP,fill=X)
+create_timetable = Button(frame1, text = "Create Custom Timetable", command = custom_table)
+create_timetable.pack()
+
+
+tk.mainloop()
